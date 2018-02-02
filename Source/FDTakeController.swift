@@ -277,6 +277,7 @@ open class FDTakeController: NSObject /* , UIImagePickerControllerDelegate, UINa
                     mediaTypes.append(String(kUTTypeMovie))
                 }
                 self.imagePicker.mediaTypes = mediaTypes
+                self.imagePicker.videoMaximumDuration = 30
 
                 //TODO: Need to encapsulate popover code
                 var popOverPresentRect: CGRect = self.presentingRect ?? CGRect(x: 0, y: 0, width: 1, height: 1)
